@@ -1,0 +1,30 @@
+<?php
+header("Content-Type: application/json;charset=utf-8");
+if($_REQUEST['getFunction']){
+   getList();
+}
+function getList(){
+   $data  = array(
+      array(
+         'id'   => 1,
+         'name' => 'xiaoming',
+         'sex'  => '男',
+         'time' => '2016年1月22日 14:45:46'
+      ),
+      array(
+         'id'   => 2,
+         'name' => '老张',
+         'sex'  => '男',
+         'time' => '2016年1月22日 14:45:46'
+      ),
+      array(
+         'id'   => 3,
+         'name' => '捞王',
+         'sex'  => '男',
+         'time' => '2016年1月22日 14:45:46'
+      )
+   );
+   $list  = json_encode(array('list'=>$data));
+   print_r($list);
+   //    print_r(json_encode(array('list'=>$data=array())));
+}

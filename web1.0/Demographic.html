@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<?php
+// Start the session
+session_start();
+echo $_SESSION['name']
+?>
+    <form>
+    <div>
+        <table>
+        <tr>
+            <td><lable for="sex">Sex:</lable></td>
+      <td><select>
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+      </select><br></td>
+        </tr>
+            <tr>
+                <td> <lable for="age">Age:</lable></td>
+                <td> <input type="text" name='age'/><br></td>
+            </tr>
+        <tr>
+            <td><lable for="DateBirth">DateBirth:</lable></td>
+            <td><input type="date" name="DateBirth"/><br></td>
+        </tr>
+            <tr>
+                <td><lable for="DateDeath">DateDeath:</lable></td>
+                <td><input type="date" name="DateDeath"/><br></td>
+            </tr>
+        <tr>
+            <td><lable for="Add_1">Address Line 1:</lable></td>
+            <td><input type="text" name="Add_1"/><br></td>
+        </tr>
+         <tr>
+             <td><lable for="Add_2">Address Line 2:</lable></td>
+             <td><input type="text" name="Add_2"/><br></td>
+         </tr>
+            <tr>
+                <td><lable for="city">City:</lable></td>
+                <td><input type="text" name="city"/><br></td>
+            </tr>
+            <tr>
+                <td><lable for="State">State:</lable></td>
+        <td><select>
+            <option value="default">State</option>
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AR">AR</option>
+                <option value="AZ">AZ</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DC">DC</option>
+                <option value="DE">DE</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="IA">IA</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="MA">MA</option>
+                <option value="MD">MD</option>
+                <option value="ME">ME</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MO">MO</option>
+                <option value="MS">MS</option>
+                <option value="MT">MT</option>
+                <option value="NC">NC</option>
+                <option value="NE">NE</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NV">NV</option>
+                <option value="NY">NY</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WI">WI</option>
+                <option value="WV">WV</option>
+                <option value="WY">WY</option>
+        </select><br></td>
+            </tr>
+            <tr>
+                <td><lable for="Postal_Code">Postal Code:</lable></td>
+                <td><input type="text" name="Postal_Code"/><br></td>
+            </tr>
+            <tr>
+            <td><lable for="Visitdate">Most Recent Visit Date:</lable></td>
+                <td><input type="text" name="visitdate"/><br></td>
+            </tr>
+            <tr>
+                <td><lable for="pre_comm">Preferred Method of Communication:</lable></td>
+                <td><input type="text" name="pre_comm"/><br></td>
+            </tr>
+            <tr>
+            <td><lable for="phone_h">Home Phone:</lable></td>
+                <td><input type="text" name="phone_h"><br></td>
+            </tr>
+            <tr>
+                <td><lable for="phone_m">Mobile Phone:</lable></td>
+                <td><input type="text" name="phone_m"/><br></td>
+            </tr>
+            <tr>
+                <td><lable for="phone_o">Office Phone:</lable></td>
+                <td><input type="text" name="phone_o"/><br></td>
+            </tr>
+            <tr>
+                <td><lable for="email">Email:</lable></td>
+                <td><input type="email" name="email"/><br></td>
+            </tr>
+        <tr>
+            <td><lable for="active">Active:</lable></td>
+        <td><select>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+        </select></td>
+        </tr>
+            <tr>
+                <td><lable for="ethnity">Ethnity:</lable></td>
+                <td><input type="text" name="ethnity"/><br></td>
+            </tr>
+            <td><lable for="pre_lan">Prefer Language:</lable></td>
+            <td><input type="text" name="pre_lan"/><br></td>
+            <tr>
+                <td><lable for="race">Race:</lable></td>
+                <td><input type="text" name="race"/><br></td>
+            </tr>
+            <tr>
+                <td><lable for="ethnity">Ethnity:</lable></td>
+                <td><input type="text" name="enthnity"/><br></td>
+            </tr>
+        <tr>
+            <td><label for="race_effect">Race Effective Date</label></td>
+            <td><input type="Date" name="race_effect"/><br></td>
+        </tr>
+            <tr>
+                <td><label for="smoke_s">Smoking Status</label></td>
+        <td><select>
+            <option value="Never">Never</option>
+            <option value="Fomer">Former</option>
+             <option value="light tobacco">Light tobacco</option>
+             <option value="Current Everday">Current Everday</option>
+             <option value="Heavy tobacco">Heavy tobacco</option>
+             <option value="Current someday">Current someday</option>
+             <option value="Unknown">Unknown</option>
+        </select></td>
+            </tr>
+            <tr>
+                <td><label for ="smoke_effdate">Smoking Status Effective Date</label></td>
+                <td><input type="date" name="smoke_effdate"/><br></td>
+            </tr>
+
+
+        <tr>
+            <td><input type="submit" name="submit" value="Save"/></td>
+            <td></td>
+        </tr>
+        </table>
+    </div>
+
+    </form>
+	<a href= "Allergy.html">Next to Allergy</a>
+	<!---<form method="post" action="Allergy.html"><input type="button" value="Next to Allergy"/></form>--->
+
+</body>
+</html>

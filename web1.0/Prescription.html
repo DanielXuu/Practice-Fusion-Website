@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prescription</title>
+</head>
+<body>
+<form method="POST", action="editprescripforinsert.php">
+    <p><lable for="type">Despense:</lable>
+        <input type="text" name="despense"/><br></p>
+    <p><lable for="refills">Refills:</lable>
+        <select name="refills">
+
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+        </select><br></p>
+
+    <p><lable for="days_supply">Days of Supply:</lable>
+        <input type="number" name="days_supply"/><br></p>
+    <p><lable for="scriptdate">Date of Script:</lable>
+        <input type="date" name="scriptdate"/><br></p>
+    <p><lable for="pharmacy">Pharmacy:</lable>
+        <input type="text" name="pharmacy"/><br></p>
+    <p><lable for="pre_provider">Prescription Provider:</lable>
+        <input type="text" name="pre_provider"/><br></p>
+
+
+    <p><input type="submit" name="submit" value="Save"/>
+       <input type="submit" name="submit" value="Next"/></p>
+</form>
+
+</div>
+
+</body>
+</html>
