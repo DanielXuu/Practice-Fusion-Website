@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TEST</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+  <!-- Insert Scripts & CSS Here -->
+  <link rel="stylesheet" type="text/css" href="http://d1e24pw9mnwsl8.cloudfront.net/c/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+  <div class="mypanel"></div>
+
+    <script>
+    $.getJSON('https://frozen-plains-34479.herokuapp.com/?lst=2', function(data) {
+
+      var text = `id: ${data.nodes[1].id}<br>
+                  indegree: ${data.nodes[1].inDegree}<br>
+                  weighted_indegree: ${data.nodes[1].weighted_indegree}<br>
+                  betweenness: ${data.nodes[1].betweenness}<br>`
+
+
+      $(".mypanel").html(text);
+    });
+</script>
+
+</body></html>
